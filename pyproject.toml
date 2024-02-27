@@ -1,0 +1,5 @@
+[project]
+name = "temporal-playground"
+requires-python = ">= 3.11"
+authors = [{ name = "Loc Mai", email = "locmai0201@gmail.com" }]
+dependencies = ["temporalio"]
