@@ -10,6 +10,8 @@ def run_sort(detail: SortDetails) -> str:
             bubble(detail.numbers)
         case "quick":
             quick(detail.numbers, 0, len(detail.numbers) - 1)
+        case "sleep":
+            sleep(detail.numbers)
         case _:
             print(f"{detail.name} sort has not been implemented")
     print(f"End sorting {detail.numbers} with {detail.name} sort")

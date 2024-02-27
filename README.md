@@ -1,13 +1,28 @@
-## Temporal Python SDK playground
+## A scuffed playground with Temporal SDK
 
-### Pre-requiesites
+### Prerequisites
 
 - [temporal-cli](https://docs.temporal.io/cli#install)
 - Make
-- Python 3.11
+- Python
+- Go
 - uv
 
-### Run
+### Start Temporal development server
+
+Start temporal:
+
+```sh
+make temporal
+```
+
+### Run Python worker/client
+
+Jump into the `python` directory:
+
+```
+cd python
+```
 
 Prepare virtualenv:
 
@@ -17,11 +32,6 @@ source ./env/bin/activate
 make sync
 ```
 
-Start temporal:
-
-```sh
-make temporal
-```
 
 Start a worker:
 
@@ -29,8 +39,28 @@ Start a worker:
 make worker
 ```
 
-Start a client:
+Make a client call:
 
 ```sh
 make client
+```
+
+### Run Go worker/client
+
+Jump into the `go` directory:
+
+```
+cd go
+```
+
+Start a worker:
+
+```sh
+go run ./worker/main.go
+```
+
+Make a client call:
+
+```sh
+go run ./client/main.go
 ```

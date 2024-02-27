@@ -28,3 +28,9 @@ def partition(arr, low, high):
     (arr[i + 1], arr[high]) = (arr[high], arr[i + 1])
 
     return i + 1
+
+import time
+def sleep(arr):
+    for i in range(1, len(arr) + 1):
+        print(f"Sleep {i} time(s)")
+        time.sleep(1)
